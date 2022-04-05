@@ -34,32 +34,99 @@
     </div>
  
       <div class="tab-content" id="navTabContent">
-        <div class="tab-pane fade show active" id="product" role="tabpanel" aria-labelledby="product-tab">product</div>
+
+        <div class="tab-pane fade show active" id="product" role="tabpanel" aria-labelledby="product-tab">
+          
+          <h3 id = "categoryHeader"> Select Category </h3>
+          <div class = "dropdown">
+            <button class = "btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              none
+            </button>
+            
+            <ul class = "dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><div class = "dropdown-item "> item </div></li>
+              <li><div class = "dropdown-item "> item2 </div></li>
+            </ul>
+          </div>
+        </div>
+        
+        
         <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="home-tab">
             
             <div id = "aboutIntro">
             <h3>About E-Commerce</h3>
-            <p>E-Commerce sells X products from all over the world.</p>
-            <img src = "images/commerce.jpg" width = "50px" height = "400px" class="center"
+            <p>E-Commerce sells shoe products from all over the world. As a company, we are dedicated
+              to providing affordable quality shoes.
+            </p>
+            <img src = "images/commerce.jpg" width = "100%" height = "auto" class="center"
              alt="Freepik image">
             <a href='https://www.freepik.com/vectors/shopping-website'>Shopping website vector created by pch.vector - www.freepik.com</a>
         
         </div>
 
             <div id = productList> 
-            <h3>What we sell</h3>
             
-                <ul id = "productCategoryList">
-                    <li id = "productCategory">abcdef</li>
-                    <li id = "productCategory">hijkl</li>
-                    <li id = "productCategory">mnopq</li>
-                </ul>
-            </div>
-            <div id = "management">
+            <div id = "categoryList">
+            <h3>Our Shoe Products</h3>
 
-                <h3>Management Team</h3>
+            <div class="row justify-content-center">
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">category</h5>
+                    <p class="card-text">description</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">category</h5>
+                    <p class="card-text">description</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            
+          </div>
+          </div>
+  
+          
+            <div id = "management">
+                <h3>Management Team</h3>
+                <p>Our management team includes experienced hard-working people.</p>
+                <div class="row row-cols-2 row-cols-sm-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="images/blankprofile.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">name</h5>
+                        <p class="card-text">description</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="images/blankprofile.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">name</h5>
+                        <p class="card-text">description</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="images/blankprofile.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">name</h5>
+                        <p class="card-text">description</p>
+                      </div>
+                    </div>
+                  </div>
+                   
+              </div>
+            </div>
+
+
         </div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">contact</div>
       </div>
