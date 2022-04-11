@@ -1,10 +1,12 @@
 @media (max-width: 768px) {  
+   
 
-    
-    .navbar{
-        background: pink;
-    }
+}
 
+*{
+    padding: 0;
+    margin: 0;
+     
 }
 
 html, body {
@@ -12,6 +14,45 @@ html, body {
     overflow-x: hidden;
 }
 
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; color: inherit}
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(31, 36, 48);
+    background:linear-gradient(90deg, rgba(16,21,34,1) 0%, rgba(28,43,55,1) 70%);
+    color: rgb(245, 245, 240);
+  }
+  
+ul h1{
+    padding-left: 10px;
+    padding-top:3px;
+    display: inline-block;
+}
+
+  li {
+    float: right; 
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+ 
+ 
 .center {
     display: block;
     margin-left: auto;
@@ -19,9 +60,7 @@ html, body {
     width: 50%;
   }
 
-.navbar{
-    background: linear-gradient(90deg, rgba(10,28,71,1) 0%, rgba(62,99,131,1) 70%);
-}
+
 
 #navTabNavigation{
     background-color: rgb(250, 250, 250);
