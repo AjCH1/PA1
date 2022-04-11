@@ -8,358 +8,129 @@
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.2/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <link href = "header.html" rel = "import"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>E-Commerce Website</title>
 </head>
 <body>
      
-      <header>
-        <ul>
-          <h1>E-Commerce</h1>  
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Products</a></li>
-        </ul>
-      </header>
+    <div id="nav-placeholder"></div>
+
+
+    <div id = "categoryHeader">
+      <h3>Choose Category</h3>
       
- 
-      <div class="tab-content" id="navTabContent">
+      <select id = "categorySelector" name = "category">
+        <option value="0" class = "category">None</option>
+        <option value="1" class = "category">Converse</option>
+      </select>
+             
+    </div>
 
-        <div class="tab-pane fade show active" id="product" role="tabpanel" aria-labelledby="product-tab">
-          
-          <h3 id = "categoryHeader"> Select Category </h3>
-          <div class = "dropdown">
-            <button class = "btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              none
-            </button>
-            
-       
-            <div class="row">
+  <div class = "row">
 
-              <!--template for product card - START -->
-              <div class="col-sm-3">  
-                
-                <a href = '' class = "text-decoration-none">
-                <div class="card" id = "productCard">
-                  
-                
-                  <img class="card-img-top" id = "productCardImage" src="images/Air Jordan 5.jpg" alt="Air Jordan 5">
-                  <div class="card-body">
-                    <h5 class="card-title text-info">Air Jordans 5</h5>
-                    <h6 class = "card-title text-muted">Nike</h6>
-
-                    <h5 class="card-title text-dark">$220.00</h5>
-                     
-                    <div id="rating"> 
-                      <i class="fa fa-star rating-color"></i> 
-                      <i class="fa fa-star rating-color"></i> 
-                      <i class="fa fa-star rating-color"></i> 
-                      <i class="fa fa-star rating-color"></i> 
-                      <i class="fa fa-star rating-color"></i> 
-                    
-                      <div class = "text-muted" id = "review">30 reviews</div>
-                    </div> 
-                  </div>
-                </div>
-                </a>
-              </div>
-              <!--template for product card - END-->
-
-              
-              <div class="col-sm-3">
-                <div class="card" id = "productCard">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>    
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="card" id = "productCard">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="card" id = "productCard">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>    
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="card" id = "productCard">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="card" id = "productCard">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>    
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-3">
-                <div class="card" id = "productCard">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="card" id = "productCard">
-                  <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
-        
-        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="home-tab">
-            
-            <div id = "aboutIntro">
-            <h3>About E-Commerce</h3>
-            <p>E-Commerce sells shoe products from all over the world. As a company, we are dedicated
-              to providing affordable quality shoes.
-            </p>
-            <img src = "images/commerce.jpg" width = "100%" height = "auto" class="center"
-             alt="Freepik image">
-            <a href='https://www.freepik.com/vectors/shopping-website'>Shopping website vector created by pch.vector - www.freepik.com</a>
-        
+    <div class = "column">
+    <a href = "" id = productCardLink>
+      <div class="productCard">
+        <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
+        <div class="container">
+          <h4><b>Air Jordans 5</b></h4> 
+          <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
+          <h4><b>$220.00</b></h4> 
         </div>
 
-            <div id = productList> 
-            
-            <div id = "categoryList">
-            <h3>Our Shoe Products</h3>
+        <div id = "rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
 
-            <div class="row justify-content-center">
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/shoe1.webp" width="100%" height = "auto" class = "center">
-                    <h5 class="card-title">Nike Air Force 1</h5>
-                    <p class="'card-text">Estimate Price: $100</p>
-                    <p class="card-text">The radiance lives on in the Nike Air Force 1, 
-                      the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, 
-                      clean finishes and the perfect amount of flash to make you shine.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/shoe2.webp" width="100%" height = "auto" class = "center">
- 
-                    <h5 class="card-title">Nike Air Max 270</h5>
-                    <p class="'card-text">Estimate Price: $160</p>
-                    <p class="card-text">Nike's first lifestyle Air Max brings you style, 
-                      comfort and big attitude in the Nike Air Max 270. The design draws inspiration from Air Max icons, 
-                      showcasing Nike's greatest innovation with its large window and fresh array of colors.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/shoe3.webp" widgth="100%" height="auto" class = "center">
-                    <h5 class="card-title">Nike Air Vapormax 2021</h5>
-                    <p class="'card-text">Estimate Price: $210</p>
-                    <p class="card-text">Made from at least 40% recycled materials by weight, 
-                      the Nike Air VaporMax 2021 FK is airy and easy to wear with superstretchy, 
-                      recycled Flyknit fabric (plus a soft collar that sculpts your ankle). 
-                      The stitched-on Swoosh and recycled TPU heel clip add a splash of intrigue 
-                      as you float down the streets on incredibly soft VaporMax cushioning.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/shoe4.webp" width = "100%" height = "auto" class = "center">
-                    <h5 class="card-title">LeBron 19</h5>
-                    <p class="'card-text">Estimate Price: $210</p>
-                    <p class="card-text">LeBron thrives when stakes are high and the pressure’s on. 
-                      The LeBron 19 harnesses that energy with a locked-in fit and an updated cushioning system. 
-                      The snug inner sleeve is pulled together by a sculpted overlay that the laces feed through 
-                      to help prevent the foot from moving inside the shoe. Cushioned pods around the collar and 
-                      tongue add comfort while reducing weight, giving players the secure feel and confidence to 
-                      go all out when the game is on the line</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/soldier 14.jpg" width = "100%" height = "auto" class = "center">
-                    <h5 class="card-title">Soldier 14</h5>
-                    <p class="'card-text">Estimate Price: $140</p>
-                    <p class="card-text">The Soldier Warrior series has always been one of James' favorite boots, especially during the playoffs. 
-                      This Soldier 14 also has a very good reputation in actual combat shoes. The comfort of the shoes is very high. 
-                      The front palm adopts a fan-shaped ZooM air cushion, and the back palm is a horseshoe-shaped ZooMAR air cushion, 
-                      which greatly increases the comfort. There are also professional cushioning materials, and the wear resistance is also good.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/kd 14.jpg" width = "100%" height = "auto" class = "center">
-                    <h5 class="card-title">KD 14</h5>
-                    <p class="'card-text">Estimate Price: $150</p>
-                    <p class="card-text">Nike kd14 will go on sale in April 2021. It is a practical sneaker designed for defenders and strikers. 
-                      The overall configuration uses full-length Zoom Strobel air cushion + arch TPU stabilizer + xdr rubber outsole, which can be clearly felt after you put your foot on it. 
-                      The midsole feedback has good resilience and a full sense of venue. When the breakthrough is started, the midsole feedback is sensitive. 
-                      The xdr outsole + deep multi-directional pattern design has good grip performance and good wear resistance. 
-                      </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/aj1midse.jpg" width = "100%" height = "auto" class = "center">
-                    <h5 class="card-title">Air Jordan 1 Mid SE</h5>
-                    <p class="'card-text">Estimate Price: $135</p>
-                    <p class="card-text">These AJ1s serve a classic silhouette and vintage-inspired colors, making them a must-have for any sneakerhead. 
-                      Rich grain leather and woven fabrics will elevate any streetwear 'fit, while a buttery soft interior adds comfort.
-                      This new AJ 1 Mid is made of leather, suede and other materials spliced ​​together, and the advanced materials also give the shoes a good texture. 
-                      The royal blue toe cap and the Swoosh with the familiar Lakers elements are eye-catching and are the highlights of the shoe. 
-                      In addition, the red design on the collar is also quite eye-catching, echoing the tongue insole.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/lebron18.jpg" width = "100%" height = "auto" class = "center">
-                    <h5 class="card-title">LeBron 18 Low 'Bugs vs Marvin</h5>
-                    <p class="'card-text">Estimate Price: $160</p>
-                    <p class="card-text">It’s Tunes vs. Goons in the long-awaited basketball blockbuster, Space Jam: A New Legacy. 
-                      Nike Basketball celebrates the showdown with a fun take on the LeBron 18 Low. 
-                      The shoe is light yet strong, with responsive cushioning tuned for LeBron’s fast, powerful game—and perfect for taking on a squad of Goons in space. 
-                      Riffing on the classic Looney Tunes rivalry, ‘Bugs vs Marvin’ has the rascally rabbit squaring off against the diabolical Martian in an epic clash on the cosmic court.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/vapormax.jpg" width = "100%" height = "auto" class = "center">
-                    <h5 class="card-title">Nike Air VaporMax 2021 FK</h5>
-                    <p class="'card-text">Estimate Price: $210</p>
-                    <p class="card-text">Spring is in the Air—and also in your step! The VaporMax Air unit uses the pressure from your stride to create a springy bounce with every move. 
-                      The Flyknit upper is breathable and structured to help keep your feet cool and secure.
-                      High elastic and wide rubber band, will not strangle the instep, and will not fail to follow the foot.
-                      The flyknit fabric effectively wraps the foot surface and is breathable.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/vapormax plus.jpg" width = "100%" height = "auto" class = "center">
-                    <h5 class="card-title">Nike Air VaporMax Plus</h5>
-                    <p class="'card-text">Estimate Price: $210</p>
-                    <p class="card-text">The Nike Air VaporMax Plus looks to the past and propels you into the future. Nodding to the 1998 Air Max Plus with its floating cage, padded upper and heel logo, 
-                      it adds revolutionary VaporMax Air technology to ramp up the comfort and create a modern look.
-                      Nike nike air vapormax plus "Triple Black" pure black color matching, the body of nike air plus is grafted on the VaporMax air cushion outsole.
-                      The highly recognizable classic frame lines, combined with new atmospheric points, collide with a wild feeling.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/huarache.jpg" width = "100%" height = "auto" class = "center">
-                    <h5 class="card-title">Nike Air Huarache</h5>
-                    <p class="'card-text">Estimate Price: $130</p>
-                    <p class="card-text">Release your discontent, let your worries fall away and get moving in the Nike Air Huarache. Built to fit your foot and designed for comfort, 
-                      these kicks put a fresh spin on a street-level favorite. 
-                      Breathable, neoprene-like fabric, stripped-away branding and an unmistakable heel clip keep the early ‘90s look you love, 
-                      while subtle yin-yang symbols on the insole and side encourage you to seek balance and harmony in your day.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <img src = "images/Zoom Freak 3.jpg" width = "100%" height = "auto" class = "center">
-                    <h5 class="card-title">Zoom Freak 3</h5>
-                    <p class="'card-text">Estimate Price: $120</p>
-                    <p class="card-text">Giannis is an athlete of freakish power and incredible range. His ability to play any position make him difficult to guard and nearly impossible to stop. 
-                      The Zoom Freak 3 helps Giannis create space with his massive strides and misdirecting Euro-step. The molded midfoot strap and external overlay provide side-to-side stability when he's powering to the rim, 
-                      while the multidirectional traction helps him stay in control.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div id = "rating-review">30 reviews</div>
+        </div>
+      </div>
+    </a>
+    </div>
+
+    <div class = "column">
+      <a href = "" id = productCardLink>
+        <div class="productCard">
+          <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
+          <div class="container">
+            <h4><b>Air Jordans 5</b></h4> 
+            <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
+            <h4><b>$220.00</b></h4> 
           </div>
   
-          
-            <div id = "management">
-                <h3>Management Team</h3>
-                <p>Our management team includes experienced hard-working people.</p>
-                <div class="row row-cols-2 row-cols-sm-3 g-4">
-                  <div class="col">
-                    <div class="card">
-                      <img src="images/blankprofile.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">name</h5>
-                        <p class="card-text">description</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img src="images/blankprofile.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">name</h5>
-                        <p class="card-text">description</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card">
-                      <img src="images/blankprofile.webp" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">name</h5>
-                        <p class="card-text">description</p>
-                      </div>
-                    </div>
-                  </div>
-                   
-              </div>
-            </div>
-
-
+          <div id = "rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+  
+            <div id = "rating-review">30 reviews</div>
+          </div>
         </div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">contact</div>
+      </a>
       </div>
 
+        <div class = "column">
+    <a href = "" id = productCardLink>
+      <div class="productCard">
+        <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
+        <div class="container">
+          <h4><b>Air Jordans 5</b></h4> 
+          <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
+          <h4><b>$220.00</b></h4> 
+        </div>
+
+        <div id = "rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+
+          <div id = "rating-review">30 reviews</div>
+        </div>
+      </div>
+    </a>
+    </div>
+
+
+    <div class = "column">
+      <a href = "" id = productCardLink>
+        <div class="productCard">
+          <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
+          <div class="container">
+            <h4><b>Air Jordans 5</b></h4> 
+            <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
+            <h4><b>$220.00</b></h4> 
+          </div>
+  
+          <div id = "rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+  
+            <div id = "rating-review">30 reviews</div>
+          </div>
+        </div>
+      </a>
+      </div>
     
+  </div>
       
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-</script>
+  <script src="item.js"></script>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("header.html");
+    });
+    </script>
 
-<script src="item.js"></script>
 </html>
