@@ -7,6 +7,11 @@
 
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -64,6 +69,45 @@
     border-color: rgb(58, 129, 216);
  
 }
+
+#categoryHeader{
+    margin-left: 1vh;
+    margin-top: 2vh;
+}
+
+#dropdownMenuButton1{
+     margin-left: 1vh;
+}
+
+#productCard{
+  
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
  
+    border-radius: 0;
  
+    
+}
+ 
+#productCardImage{
+    display: flex;
+   
+}
+
+#rating{
+    vertical-align: middle;
+ 
+}
+
+#review{
+    margin-left: 0.5vh;
+    vertical-align: middle;
+    display: inline-block;
+}
  
