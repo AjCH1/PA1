@@ -1,10 +1,7 @@
-@media (max-width: 768px) {  
-
-    
-    .navbar{
-        background: pink;
-    }
-
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html, body {
@@ -12,33 +9,59 @@ html, body {
     overflow-x: hidden;
 }
 
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; color: inherit}
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(31, 36, 48);
+    background:linear-gradient(90deg, rgba(16,21,34,1) 0%, rgba(28,43,55,1) 70%);
+    color: rgb(245, 245, 240);
+  }
+  
+ul h1{
+    padding-left: 10px;
+    padding-top:3px;
+    display: inline-block;
+}
+
+  li {
+    float: right; 
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+ 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
-
-.navbar{
-    background: linear-gradient(90deg, rgba(10,28,71,1) 0%, rgba(62,99,131,1) 70%);
-}
-
-#navTabNavigation{
-    background-color: rgb(250, 250, 250);
-}
-
+ 
 #about{
     text-align: center;
     overflow-wrap: break-word;
 }
 
 #aboutIntro{
-    padding-top: 3vh;
-    padding-left: 3vh;
-    padding-right: 3vh;
-    padding-bottom: 3vh;
-     
-    background: rgb(19, 39, 85);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, rgb(25, 33, 53) 0%, rgb(36, 51, 64) 70%);
     color:rgb(255, 255, 255);
     width: 100%;
 }
@@ -48,57 +71,73 @@ html, body {
     padding-left: 3vh;
     padding-right: 3vh;
     padding-bottom: 3vh;
-    background: rgb(207, 215, 223);
+    background: rgb(182, 193, 203);
     color:rgb(0, 0, 0);
 }
  
-
-.nav-tabs .nav-item .nav-link {
-    background-color:  rgb(250, 250, 250);
-  }
-  
+/*card*/
 #management{
-    padding-top: 2vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
+  margin-top:2vh;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
 }
 
-/*testing showing visible selection*/
-.card:hover{
-    color:rgb(58, 129, 216);
-    border-color: rgb(58, 129, 216);
- 
+.managementCard{
+    display: inline-block;
+    margin-top: 10px;;
+    box-shadow: 1px;
+    transition: 0.3s;
+    width: 33%;
+    border-radius: 5px;
+}
+
+.managementCard:hover {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  }
+
+img{
+    border-radius: 5px 5px 0 0;
 }
 
 #categoryHeader{
     margin-left: 1vh;
-    margin-top: 2vh;
+    margin-top: 1vh;
+    font-size: 2.5vh;
+     
 }
 
-#dropdownMenuButton1{
-     margin-left: 1vh;
+#categorySelector{
+    margin-top: 5px;
+    margin-bottom:5px;
+    padding: 3px;
 }
+ 
 
-#productCard{
-  
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    
-    border-top: none;
-    border-left: none;
-    border-right: none;
- 
-    border-radius: 0;
- 
-    
+.productCard{
+  background-color: white;
+    display: inline-block;
+    margin:5px;
+    box-shadow: 1px;
+    transition: 0.3s;
+    border-bottom: solid rgba(107, 107, 107, 0.2);
+    font-size: 2.5vh;
+    border-radius: 0px;
+    transition: transform .2s; /* Animation */
 }
  
-#productCardImage{
-    display: flex;
-   
+.productCard:hover{
+    color:rgb(58, 129, 216);
+    border-color: rgb(58, 129, 216);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+
+    transform: scale(1.05);
+  }
+
+.productCard img{
+    width: 50px; 
 }
+ 
 
 #rating{
     vertical-align: middle;
@@ -110,4 +149,40 @@ html, body {
     vertical-align: middle;
     display: inline-block;
 }
+ 
+ /*star rating*/
+ .checked {
+    color: orange;
+  }
+
+#rating-review{
+    margin-left: 0.5vh;
+    display: inline-block;
+}
+ 
+  /*rows in product page*/
+  /* Float 3 columns side by side */
+  .column {
+    float: left;
+    width: 33%;
+ 
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  /*responsive*/
+  @media screen and (max-width:  700px) {  
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+       
+      }
+ 
+}
+
  
