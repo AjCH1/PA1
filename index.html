@@ -23,20 +23,24 @@
       <select id = "categorySelector" name = "category">
         <option value="none" class = "category">None</option>
         <option value="converse" class = "category">Converse</option>
+        <option value="sandals" class = "category">Sandals</option>
       </select>
              
     </div>
 
   <div class = "row">
 
+    <!--template-->
     <div class = "column">
-    <a href = "" id = "converse" class="productCard">
+    <a href = "Details_Air Jordans 5.html" id = "converse" class="productCard">
         <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
-        <div class="container">
-          <h4><b>Air Jordans 5</b></h4> 
-          <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
-          <h4><b>$220.00</b></h4> 
-       
+        <div class="productBoxContainer">
+          <div class = "productBoxText"> 
+            <div class = "productBoxCategory">Converse</div>
+            <h4><b>Air Jordans 5</b></h4> 
+            <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
+            <h4><b>$220.00</b></h4>  
+        </div>
 
         <div id = "rating">
           <span class="fa fa-star checked"></span>
@@ -51,16 +55,43 @@
       </div>
     </a>
     </div>
+  <!--template-->
+
+  <div class = "column">
+    <a href = "" id = "converse" class="productCard">
+        <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
+        <div class="productBoxContainer">
+          <div class = "productBoxText"> 
+            <div class = "productBoxCategory">Converse</div>
+            <h4><b>Air Jordans 5</b></h4> 
+            <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
+            <h4><b>$210.00</b></h4>  
+        </div>
+
+        <div id = "rating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+
+          <div id = "rating-review">30 reviews</div>
  
-  
+        </div>
+      </div>
+    </a>
+    </div>
+
     <div class = "column">
-      <a href = "" id = "othercategory" class="productCard">
-          <img src="images/Air Jordan 5.jpg" alt="Other Shoe" style="width:100%">
-          <div class="container">
-            <h4><b>Other Shoe</b></h4> 
-            <h5 style = "color: rgb(128, 128, 128);">Company</h5> 
-            <h4><b>$220.00</b></h4> 
-         
+      <a href = "" id = "sandals" class="productCard">
+          <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
+          <div class="productBoxContainer">
+            <div class = "productBoxText"> 
+              <div class = "productBoxCategory">Sandals</div>
+              <h4><b>Air Jordans 5</b></h4> 
+              <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
+              <h4><b>$220.00</b></h4>  
+          </div>
   
           <div id = "rating">
             <span class="fa fa-star checked"></span>
@@ -70,12 +101,11 @@
             <span class="fa fa-star"></span>
   
             <div id = "rating-review">30 reviews</div>
+   
           </div>
         </div>
       </a>
       </div>
-    
-  </div>
       
 </body>
 
@@ -93,7 +123,7 @@
         }
         else{
           $(".productCard").hide();
-          $("#" + value).show();   
+          $('[id = ' + value + ']').show();  
         }
       })
       

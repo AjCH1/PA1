@@ -137,6 +137,18 @@ img{
 .productCard img{
     width: 50px; 
 }
+
+.productBoxContainer{
+  margin-left: 1%;
+  margin-top:1%;
+  margin-bottom: 1%;
+}
+
+.productBoxCategory{
+  font-size: smaller; 
+  color:rgb(255, 123, 0);
+  margin-bottom: 1%;
+}
  
 
 #rating{
