@@ -21,8 +21,8 @@
       <h3>Choose Category</h3>
       
       <select id = "categorySelector" name = "category">
-        <option value="0" class = "category">None</option>
-        <option value="1" class = "category">Converse</option>
+        <option value="none" class = "category">None</option>
+        <option value="converse" class = "category">Converse</option>
       </select>
              
     </div>
@@ -30,14 +30,13 @@
   <div class = "row">
 
     <div class = "column">
-    <a href = "" id = productCardLink>
-      <div class="productCard">
+    <a href = "" id = "converse" class="productCard">
         <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
         <div class="container">
           <h4><b>Air Jordans 5</b></h4> 
           <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
           <h4><b>$220.00</b></h4> 
-        </div>
+       
 
         <div id = "rating">
           <span class="fa fa-star checked"></span>
@@ -52,62 +51,15 @@
     </a>
     </div>
 
-    <div class = "column">
-      <a href = "" id = productCardLink>
-        <div class="productCard">
-          <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
-          <div class="container">
-            <h4><b>Air Jordans 5</b></h4> 
-            <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
-            <h4><b>$220.00</b></h4> 
-          </div>
   
-          <div id = "rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-  
-            <div id = "rating-review">30 reviews</div>
-          </div>
-        </div>
-      </a>
-      </div>
-
-        <div class = "column">
-    <a href = "" id = productCardLink>
-      <div class="productCard">
-        <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
-        <div class="container">
-          <h4><b>Air Jordans 5</b></h4> 
-          <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
-          <h4><b>$220.00</b></h4> 
-        </div>
-
-        <div id = "rating">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-
-          <div id = "rating-review">30 reviews</div>
-        </div>
-      </div>
-    </a>
-    </div>
-
-
     <div class = "column">
-      <a href = "" id = productCardLink>
-        <div class="productCard">
-          <img src="images/Air Jordan 5.jpg" alt="Air Jordans 5" style="width:100%">
+      <a href = "" id = "othercategory" class="productCard">
+          <img src="images/Air Jordan 5.jpg" alt="Other Shoe" style="width:100%">
           <div class="container">
-            <h4><b>Air Jordans 5</b></h4> 
-            <h5 style = "color: rgb(128, 128, 128);">Nike</h5> 
+            <h4><b>Other Shoe</b></h4> 
+            <h5 style = "color: rgb(128, 128, 128);">Company</h5> 
             <h4><b>$220.00</b></h4> 
-          </div>
+         
   
           <div id = "rating">
             <span class="fa fa-star checked"></span>
@@ -130,6 +82,20 @@
   <script>
     $(function(){
       $("#nav-placeholder").load("header.html");
+    
+      $("#categorySelector").change(function(){
+        var value = $(this).val(); //get value of selected dropdown item
+
+        if(value == "none")
+        { 
+          $(".productCard").show();
+        }
+        else{
+          $(".productCard").hide();
+          $("#" + value).show();   
+        }
+      })
+      
     });
     </script>
 
