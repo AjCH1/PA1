@@ -8,6 +8,7 @@
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.2/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detailpage.css">
     <link href = "header.html" rel = "import"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>E-Commerce Website</title>
@@ -15,34 +16,36 @@
 <body>
      
     <div id="nav-placeholder" ></div>
+    <div class = "detailPage">
+        <div class="col-3" style="text-align: center; padding-top: 10px;">
+            <p >Air Force 1</p>
 
-    <div class="col-3" style="text-align: center; padding-top: 10px; font-size: xx-large">
-        <p>Air Force 1</p>
+            <div class = "category">Category: Converse</div>
+        </div>
 
-    </div>
+        <div id="main">
 
-    <div id="main">
-
-        <div class="row" style="text-align: center">
-            <div class="profile">
+            <div class="row" style="text-align: center">
                 <div class="profile">
-                    <img src="images/Air Force 1.webp" width="240px" height = "300px">
+                    <div class="profile">
+                        <img id = "productImage" src="images/Air Force 1.webp"  >
+                    </div>
+                </div>
+                <div class="row" style="text-align: center;  ">
+                    <p id = "price">$100</p>
+                </div>
+                <div class="row" style="text-align: center;  ">
+
+                <p id = "description">The radiance lives on in the Nike Air Force 1,
+                        the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays,
+                        clean finishes and the perfect amount of flash to make you shine.</p>
                 </div>
             </div>
-            <div class="row" style="text-align: center; padding-top: 10px;">
-                <p> Estimate Price: $100</p>
-            </div>
-            <div class="row" style="text-align: center; padding-top: 10px;">
-
-            <p>The radiance lives on in the Nike Air Force 1,
-                    the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays,
-                    clean finishes and the perfect amount of flash to make you shine.</p>
-            </div>
         </div>
-      
+    </div>
 
-<fieldset>
-    <legend>
+<fieldset id = "orderForm">
+    <legend style = "text-align: center;">
 
           Order Information
     </legend>

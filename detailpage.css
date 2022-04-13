@@ -1,0 +1,126 @@
+.detailPage{
+    margin:20px;
+    padding: 10px;
+}
+
+p{
+    font-size: xx-large;
+}
+
+.category{
+    margin-top:1vh;
+    color: orange;
+    font-style: oblique;
+    font-size: x-large;
+}
+
+img, #productImage{
+    width: 480px;
+    height: 600px;
+}
+
+#price{
+height:auto;
+width:100%;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#description{
+    font-size: x-large;
+}
+
+#orderForm{
+    margin: auto;
+    width:65%;
+    
+}
+
+legend{
+    font-size: x-large;
+}
+
+label{
+    font-size: x-large;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    margin-top:5px;
+    transition: 0.3s;
+    font-size: X-large;
+}
+
+input[type=text]:focus {
+    border: 2px solid rgb(127, 127, 127);
+  }
+
+select{
+    width: 200px;
+    height: 40px;
+
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:20px;
+
+    border-radius: 4px;
+    transition: 0.3s;
+
+    font-size: x-large;
+}
+
+select:focus{
+    border: 2px solid rgb(127, 127, 127);
+}
+
+#shipping-method{
+    width: 300px;
+}
+
+fieldset{
+    border-radius: 8px;
+}
+
+
+.formButton{
+    width:200px;
+    height:auto;
+    background-color: #51cbfb;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+
+
+    margin-bottom: 3vh;
+}
+
+.formButton:hover{
+    background-color: #4CAF50;
+}
+
+
+@media screen and (max-width:  900px) { 
+    
+    .detailPage{
+
+    }
+
+    input{
+        width: 50%;
+        height: 40px;
+        margin-top:5px;
+        transition: 0.3s;
+    }
+
+    img, #productImage{
+        width: 360px ;
+        height: 480px;
+    }
+
+}
