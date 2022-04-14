@@ -64,6 +64,8 @@ ul h1{
     background: linear-gradient(90deg, rgb(25, 33, 53) 0%, rgb(36, 51, 64) 70%);
     color:rgb(255, 255, 255);
     width: 100%;
+
+    font-size: x-large;
 }
 
 #productList{
@@ -73,6 +75,8 @@ ul h1{
     padding-bottom: 3vh;
     background: rgb(182, 193, 203);
     color:rgb(0, 0, 0);
+
+    font-size: x-large;
 }
  
 /*card*/
