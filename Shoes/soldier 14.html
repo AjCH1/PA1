@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.2/css/all.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../detailpage.css">
-    <link href = "../header.html" rel = "import"/>
+    <link href = "../header_Shoes.html" rel = "import"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>E-Commerce Website</title>
 </head>
@@ -20,7 +20,7 @@
         <div class="col-3" style="text-align: center; padding-top: 10px;">
             <p >Soldier 14</p>
 
-            <div class = "category">Category: Nike</div>
+            <div class = "category">Category: Black</div>
         </div>
 
         <div id="main">
@@ -65,12 +65,12 @@
 
                 <div class="row" style="text-align: center">
                     <label for="phone">Phone Number: </label><br>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br>
+                    <input type="tel" id= "phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder = "123-456-7890" required><br>
                 </div>
 
                 <div class="row" style="text-align: center">
-                <label for="clientEmail">Email: </label><br>
-                    <input type="text" id="clientEmail" name="clientEmail" required><br><br>
+                <label for="email">Email: </label><br>
+                    <input type="email" id="email" name="email" placeholder = "example@email.com" required><br><br>
                 </div>
                 <div class="row" style="text-align: center">
                     <label for="credit-card">Credit Card Number: </label><br>
@@ -113,11 +113,64 @@
                 <div class="row" style="text-align: center">
 
                 <label for="state">State: </label><br>
-                    <input type="text" id="state" name="state" style="text-transform:uppercase" required><br>
+                <select name='state' id='state' required>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AR">AR</option>	
+                        <option value="AZ">AZ</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="IA">IA</option>	
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="MA">MA</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MO">MO</option>	
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="NC">NC</option>	
+                        <option value="NE">NE</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>			
+                        <option value="NV">NV</option>
+                        <option value="NY">NY</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WI">WI</option>	
+                        <option value="WV">WV</option>
+                        <option value="WY">WY</option>
+                    </select>	
+                <br>
                 </div>
                 <div class="row" style="text-align: center">
                     <label for="zip">Zip Code: </label><br>
-                    <input type="text" id="zip" name="zip"required><br>
+                    <input type="text" id="zip" name="zip" pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$" required><br>
                 </div>
 
                 <div class="row" style="text-align: center">
@@ -137,13 +190,9 @@
         </form>
     </div>
 </fieldset>
-<script src="item.js"></script>
-  <script>
+<script>
     $(function(){
-      $("#nav-placeholder").load("header.html");
-    
-
+      $("#nav-placeholder").load("../header_Shoes.html");
     });
-    </script>
-
+</script>
 </html>
