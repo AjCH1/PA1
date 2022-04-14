@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="description" content="E-Commerce Website">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../detailpage.css">
+    <link href = "../header.html" rel = "import"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>E-Commerce Website</title>
+</head>
+<body>
+     
+    <div id="nav-placeholder" ></div>
+    <div class = "detailPage">
+        <div class="col-3" style="text-align: center; padding-top: 10px;">
+            <p >Air Jordan 1 Mid SE</p>
+
+            <div class = "category">Category: Nike</div>
+        </div>
+
+        <div id="main">
+
+            <div class="row" style="text-align: center">
+                <div class="profile">
+                    <div class="profile">
+                        <img id = "productImage" src="../images/aj1midse.jpg"  >
+                    </div>
+                </div>
+                <div class="row" style="text-align: center;  ">
+                    <p id = "price">$135</p>
+                </div>
+                <div class="row" style="text-align: center;  ">
+
+                <p id = "description">These AJ1s serve a classic silhouette and vintage-inspired colors, making them a must-have for any sneakerhead. 
+                    Rich grain leather and woven fabrics will elevate any streetwear 'fit, while a buttery soft interior adds comfort.
+                    This new AJ 1 Mid is made of leather, suede and other materials spliced ​​together, and the advanced materials also give the shoes a good texture. 
+                    The royal blue toe cap and the Swoosh with the familiar Lakers elements are eye-catching and are the highlights of the shoe. 
+                    In addition, the red design on the collar is also quite eye-catching, echoing the tongue insole.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<fieldset id = "orderForm">
+    <legend style = "text-align: center;">
+
+          Order Information
+    </legend>
+    <div class="profile" style="text-align: center">
+        <form action="" name="OrderForm" onSubmit="return (CheckRegistration())">
+            <div class="row">
+                <div class="row" style="text-align: center">
+                    <label for="fname">First Name: </label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                </div>
+
+                <div class="row" style="text-align: center">
+                <label for="lname">Last Name: </label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                </div>
+
+                <div class="row" style="text-align: center">
+                    <label for="phone">Phone Number: </label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required><br>
+                </div>
+
+                <div class="row" style="text-align: center">
+                <label for="clientEmail">Email: </label><br>
+                    <input type="text" id="clientEmail" name="clientEmail" required><br><br>
+                </div>
+                <div class="row" style="text-align: center">
+                    <label for="credit-card">Credit Card Number: </label><br>
+                    <input type="text" id="credit-card" name="credit-card" placeholder="VISA Only" required><br>
+                </div>
+                <div class="row" style="text-align: center">
+
+                <label for="expiration-date">Expiration Date: </label><br>
+                    <select name='expireMM' id='expireMM' required>
+                        <option value=''>Month</option>
+                        <option value='01'>January</option>
+                        <option value='02'>February</option>
+                        <option value='03'>March</option>
+                        <option value='04'>April</option>
+                        <option value='05'>May</option>
+                        <option value='06'>June</option>
+                        <option value='07'>July</option>
+                        <option value='08'>August</option>
+                        <option value='09'>September</option>
+                        <option value='10'>October</option>
+                        <option value='11'>November</option>
+                        <option value='12'>December</option>
+                    </select>
+                    <select name='expireYY' id='expireYY' required>
+                        <option value=''>Year</option>
+                        <option value='21'>2022</option>
+                        <option value='22'>2023</option>
+                        <option value='23'>2024</option>
+                        <option value='24'>2025</option>
+                        <option value='25'>2026</option>
+                        <option value='25'>2027</option>
+
+                    </select>
+                    <br/>
+                </div>
+                <div class="row" style="text-align: center">
+                    <label for="address">Shipping Address: </label><br>
+                    <input type="text" id="address" name="address" required><br>
+                </div>
+                <div class="row" style="text-align: center">
+
+                <label for="state">State: </label><br>
+                    <input type="text" id="state" name="state" style="text-transform:uppercase" required><br>
+                </div>
+                <div class="row" style="text-align: center">
+                    <label for="zip">Zip Code: </label><br>
+                    <input type="text" id="zip" name="zip"required><br>
+                </div>
+
+                <div class="row" style="text-align: center">
+                <label for="shipping-method">Shipping Method: </label><br>
+                    <select name="shipping-method" id="shipping-method">
+                        <option value="One-Day Delivery">One-Day Delivery</option>
+                        <option value="Three-Days Delivery">Three-Days Delivery</option>
+                        <option value="Normal Delivery">Normal Delivery</option>
+                    </select><br/><br>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 0;">
+                <div class="profile">
+                    <input class="formButton" type="submit" value="Submit Order">
+                </div>
+            </div>
+        </form>
+    </div>
+</fieldset>
+<script src="item.js"></script>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("header.html");
+    
+
+    });
+    </script>
+
+</html>
