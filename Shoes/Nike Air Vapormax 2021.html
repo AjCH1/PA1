@@ -54,7 +54,7 @@
           Order Information
     </legend>
     <div class="profile" style="text-align: center">
-        <form action="" name="OrderForm" onSubmit="return (CheckRegistration())">
+        <form action="" name="OrderForm" onSubmit="CheckRegistration()">
             <div class="row">
                 <div class="row" style="text-align: center">
                     <label for="fname">First Name: </label><br>
@@ -197,5 +197,34 @@
     $(function(){
       $("#nav-placeholder").load("../header_Shoes.html");
     });
+
+    function CheckRegistration(){
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var phone = document.getElementById("phone").value;;
+        var email = document.getElementById("email").value;;
+        var credit = document.getElementById("credit-card").value;;
+        var expireMM = document.getElementById("expireMM").value;;
+        var expireYY = document.getElementById("expireYY").value;;
+        var address = document.getElementById("address").value;;
+        var state = document.getElementById("state").value;;
+        var zip = document.getElementById("zip").value;;
+        var shipping_method = document.getElementById("shipping-method").value;;
+
+
+    window.open("mailto:someone@example.com?subject=Purchase%20Order%20Information&body=First%20Name:%20"
+    +fname
+    +"%0ALast%20Name:%20"+lname
+    +"%0APhone%20Number:%20"+phone
+    +"%0AEmail:%20"+email
+    +"%0ACredit%20Card:%20"+credit
+    +"%0AExpiration%20Date:%20"+expireMM +"%20"+expireYY
+    +"%0AAddress:%20"+address
+    +"%0AState:%20"+state
+    +"%0AZip%20Code:%20"+zip
+    +"%0AShipping%20Method:%20"+shipping_method 
+    + "%0A"
+    );
+    }
 </script>
 </html>
