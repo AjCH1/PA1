@@ -5,6 +5,7 @@ Run the website using the Live Server extension from VSCode
 References
 https://www.w3schools.com/
 
+
 General requirements for all pages
 Requirements: 9, 10
 
